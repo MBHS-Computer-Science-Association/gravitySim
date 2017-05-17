@@ -27,5 +27,11 @@ public class alg {
 		Double xx = x+Velocity*Math.cos(Theta);
 		return xx;
 	}
+	public Double TotalTime(){
+		return 2*Math.sin(Theta)*Velocity/Gravity;
+	}
+	public Double Range(){
+		return Math.pow(Velocity, 2)*Math.sin(2*Theta)/g;
+	}
 
 }
